@@ -1,6 +1,15 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  router: {
+    base: '/',
+    middleware: 'is-logger',
+  },
+
+  loading: {
+    continuous: true,
+    duration: 1500,
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -38,9 +47,12 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
   ],
+
+  plugins: ['~/plugins/firebase.js'],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
@@ -55,9 +67,14 @@ export default {
     },
   },
 
+  transition: {
+    name: 'fade',
+    mode: 'out-in',
+  },
+
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ['~/assets/variables.scss', '~/assets/reset.scss'],
     theme: {
       dark: true,
       themes: {
