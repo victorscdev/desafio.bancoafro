@@ -2,12 +2,13 @@ import firebase from 'firebase'
 import 'firebase/firestore'
 
 const config = {
-  apiKey: 'AIzaSyBSOpqcAZwVt18m39gDEE7HfKOCAVxuU_4',
-  authDomain: 'desafio-bancoafro.firebaseapp.com',
-  projectId: 'desafio-bancoafro',
-  storageBucket: 'desafio-bancoafro.appspot.com',
-  messagingSenderId: '152199323228',
-  appId: '1:152199323228:web:16199502aa842c46fe5099',
+  apiKey: 'AIzaSyC2RJ_1lL0DOuZHzxa8fsYd56aU1R_RpLI',
+  authDomain: 'desafio-bancoafro-13bb2.firebaseapp.com',
+  databaseURL: 'https://desafio-bancoafro-13bb2-default-rtdb.firebaseio.com',
+  projectId: 'desafio-bancoafro-13bb2',
+  storageBucket: 'desafio-bancoafro-13bb2.appspot.com',
+  messagingSenderId: '782178407955',
+  appId: '1:782178407955:web:170a53fd72a311ce33d1e6',
 }
 
 const firebaseApp = firebase.initializeApp(config)

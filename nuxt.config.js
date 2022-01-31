@@ -3,7 +3,6 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   router: {
     base: '/',
-    middleware: 'is-logger',
   },
 
   loading: {
@@ -74,7 +73,11 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss', '~/assets/reset.scss'],
+    customVariables: [
+      '~/assets/variables.scss',
+      '~/assets/reset.scss',
+      '~/assets/modal.scss',
+    ],
     theme: {
       dark: true,
       themes: {

@@ -40,7 +40,15 @@ export default {
       view: false,
     },
   }),
-  mounted() {},
+  mounted() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.$router.replace('/')
+      } else {
+        return false
+      }
+    })
+  },
   methods: {
     logar() {
       firebase
