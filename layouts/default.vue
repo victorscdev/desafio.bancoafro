@@ -9,10 +9,15 @@
 </template>
 
 <script>
+import Navigation from '../components/Navigation.vue'
+import PageLoading from '../components/PageLoading.vue'
+
 export default {
   name: 'DefaultLayout',
-  component: () =>
-    import(['../components/Navigation.vue', '../components/PageLoading.vue']),
+  component: {
+    Navigation,
+    PageLoading,
+  },
   data() {
     return {
       clipped: false,
@@ -38,3 +43,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.v-main {
+  background-color: $color_mikado_yellow;
+}
+</style>

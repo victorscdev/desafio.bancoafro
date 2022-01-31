@@ -9,6 +9,7 @@
 
 <script>
 export default {
+  name: 'SnackBar',
   props: {
     text: {
       type: String,

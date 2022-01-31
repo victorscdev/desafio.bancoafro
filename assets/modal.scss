@@ -1,0 +1,53 @@
+.modal {
+  &.theme {
+    &--dark {
+      &.v-card {
+        background-color: $color_oxford_blue;
+
+        & > .v-card__text {
+          background-color: $color_oxford_blue;
+          padding: 24px;
+
+          .data-desc {
+            display: block;
+            margin-bottom: 16px;
+          }
+
+          .v-text-field {
+            &.v-textarea {
+              padding-top: 0;
+              margin-top: 0;
+            }
+          }
+        }
+
+        & > .v-card__actions {
+          & > .v-btn {
+            &.btn-salvar {
+              background-color: $color_mikado_yellow !important;
+              color: $color_rich_black_FOGRA_29 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  header {
+    &.theme {
+      &--dark {
+        &.v-toolbar {
+          &.v-sheet {
+            color: $color_oxford_blue;
+            background-color: $color_mikado_yellow !important;
+            border-color: $color_mikado_yellow !important;
+          }
+        }
+      }
+    }
+
+    .v-toolbar__content {
+      font-size: 20px;
+    }
+  }
+}
