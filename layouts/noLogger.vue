@@ -8,9 +8,12 @@
 </template>
 
 <script>
+import PageLoading from '../components/PageLoading.vue'
 export default {
   name: 'NoLogger',
-  components: () => import('../components/PageLoading.vue'),
+  components: {
+    PageLoading,
+  },
 }
 </script>
 
